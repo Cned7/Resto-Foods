@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Foods Restaurant</title>
+    <script src="https://kit.fontawesome.com/67a5038876.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Start of header section - Navigation bar -->
+
+   <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <span><a href="#"><i class="fa-solid fa-utensils"></i></a></span>
+                <span>Resto.</span>
+            </div>
+
+            <div class="navbar-items">
+                <ul class="navbar-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dishes">Dishes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-icons">
+                <span class="navbar-top-right-icons"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+                <span class="navbar-top-right-icons"><i class="fa-solid fa-heart"></i></span>
+                <span class="navbar-top-right-icons"><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
+        </nav>
+
+        <!-- Start of Mobile Menu -->
+
+        <div class="mobile-menu">
+            <nav class="mobile-navbar-container">
+                <div class="navbar-links">
+                    <span><a href="#home">Home</a></span>
+                    <span><a href="#dishes">Dishes</a></span>
+                    <span><a href="#about">About</a></span>
+                    <span><a href="#menu">Menu</a></span>
+                    <span><a href="#review">Review</a></span>
+                    <span><a href="#order">Order</a></span>
+                </div>
+            
+
+                <div class="mobile-navbar-icons">
+                    <span class="navbar-top-right-icons"><i class="fa-sharp fa-solid fa-bars"></i></span>
+                    <span class="navbar-top-right-icons"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+                    <span class="navbar-top-right-icons"><i class="fa-solid fa-heart"></i></span>
+                    <span class="navbar-top-right-icons"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+            </nav>
+        </div>
+   </header>
+   <!-- End of Header Section -->
+   
+   <br><br><br>
+
+   <!-- Start of Hero Section -->
+
+    <section id="home" class="hero-section">
+
+        <div>
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" space-between="30"
+                    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-slide class="slides">
+                    <div class="slides-text">
+                        <h2>Our Special Dish</h2>
+                        <h3>Spicy Noodles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe explicabo illum.</p>
+                        <br>
+                        <button class="buttons">Order Now</button>
+                    </div>
+                    <div>
+                        <img src="Food1-new.png" alt="spicy noodles">
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="slides">
+                    <div class="slides-text">
+                        <h2>Our Special Dish</h2>
+                        <h3>Fried Chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe explicabo illum.</p>
+                        <br>
+                        <button class="buttons">Order Now</button>
+                    </div>
+                    <div>
+                        <img src="Food2-new.png" alt="fried chicken">
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="slides">
+                    <div class="slides-text">
+                        <h2>Our Special Dish</h2>
+                        <h3>Hot Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe explicabo illum.</p>
+                        <br>
+                        <button class="buttons">Order Now</button>
+                    </div>
+                    <div>
+                        <img src="Food3-new.png" alt="hot pizza">
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <!-- End of Hero Section -->
+    
+        <!-- Start of Popular Dishes -->
+
+    <section id="dishes" class="popular-dishes-section">
+        <div class="popular-dishes-container">
+            <div class="popular-dishes-titles">
+                <p class="title-text label-text">Our Dishes</p>
+                <h3 class="subtitle-text popular-dish-name">POPULAR DISHES</h3>
+            </div>
+            <div class="popular-dishes-cardwrapper">
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Burger.png" alt="burger">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Burger</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Hash Browns.png" alt="harsh browns">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Hash Browns</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Turkey chicken.png" alt="turkey chicken">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Turkey Chicken</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Pizza.png" alt="pizza">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Pizza</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Chokolate cookies.png" alt="chocolate cookies">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Chocolate Cookies</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card">
+                    <div class="popular-dishes-icons">
+                        <span class="left"><i class="fa-solid fa-eye"></i></span>
+                        <span class="right"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="popular-dishes-image" src="Fried chicken.png" alt="fried chicken">
+                    </div>
+                    <div class="popular-dishes-card-detail">
+                        <h3 class="popular-dish-name">Chocolate Cookies</h3>
+                        <div class="star-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="popular-dishes-price-and-btn">
+                        <span class="label-text popular-dish-card-price">$15.99</span>
+                        <button class="buttons popular-card-buttons">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of popular dishes section -->
+
+    <!-- Start of About Us section -->
+
+    <section id="about" class="about-us-section">
+        <div class="about-us-container">
+            <div class="about-us-titles titles">
+                <p class="label-text title-text">About Us</p>
+                <h2 class="subtitle-text">WHY CHOOSE US</h2>
+            </div>
+
+            <div class="about-image-and-text-container">
+                <img src="About.png" alt="Resto Foods">
+                <div class="about-us-text">
+                    <h3 class="subtitle-text">Best Food In The Country</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat numquam, iusto excepturi rerum eum laudantium minima, aut error harum voluptas nemo illum expedita cupiditate molestias facilis aspernatur animi in dolore. <br><br>Quibusdam praesentium officiis, maiores porro. Quo, quaerat soluta? Veritatis labore mollitia necessitatibus! Consequuntur sint quibusdam asperiores dolore velit aperiam ut.</p>
+                    <div class="our-service-cards">
+                        <div class="service-card">
+                            <span><i class="fa-solid fa-truck"></i> Free Delivery</span>
+                        </div>
+                        <div class="service-card">
+                            <span><i class="fa-solid fa-dollar-sign"></i> Easy Payments</span>
+                        </div>
+                        <div class="service-card">
+                            <span><i class="fa-solid fa-headset"></i> 24/7 Service</span>
+                        </div>
+                        <div class="service-button">
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </section>
+
+    <!-- End of About Us Section -->
+
+    <!-- Start of Our Menu  -->
+
+    <section id="menu" class="Our-menu-section">
+        <div class="our-menu-section-container">
+            <div class="our-menu-titles">
+                <p class="label-text title-text">Our Menu</p>
+                <h3 class="subtitle-text">TODAY'S SPECIALTY</h3>
+            </div>
+            <div class="menus-container">
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious1.jpg" alt="Resto Pizza">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious2.jpg" alt="Resto Burger">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious3.jpg" alt="Resto Pancake">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious4.jpg" alt="Resto Chips">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious5.jpg" alt="Resto Spaghettini">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious6.jpg" alt="Resto White Soup">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious7.jpg" alt="Resto Chocolates">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious8.jpg" alt="Resto Cookies">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+
+                <div class="card popular-dishes-card menu-card">
+                    <div class="popular-dishes-imgwrapper">
+                        <img class="menu-image" src="Delicious9.jpg" alt="Resto Cripsy Chicken">
+                        <span class="menu-card-icon"><i class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="popular-dishes-card-detail menu-card-details">
+                        <div class="star-icon-wrapper menu-icon-wrapper">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h3 class="popular-dish-name menu-name">Delicious Food</h3>
+                        <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam facilis recusandae neque, sint accusantium illum odio similique laborum ipsa?</p>
+                    </div>
+                    <div class="menu-card-button-and-price">
+                        <button class=" menu-card-button buttons popular-card-buttons">Add To Card</button>
+                        <span class="label-text popular-dish-card-price menu-card-price">$12.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Our Menu Section -->
+
+    <!-- Start of Customers Review Section -->
+
+    <section id="review" class="customer-reviews-section">
+        <div class="customers-review-titles our-menu-titles">
+            <p class="label-text title-text customer-reviews-title">Customer Reviews</p>
+            <h3 class="subtitle-text">WHAT THEY SAY</h3>
+        </div>
+
+        <div class="customer-reviews-container">
+            <swiper-container class="slides-holder" pagination="false" navigation="false" space-between="30"
+            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" slides-per-view="3">
+
+                <swiper-slide class="customer-review-card">
+                    <div class="reviewer-image reviewer-details">
+                        <div class="review-head-name-rating">
+                            <img src="Review1.jpg" alt="Resto reviews">
+                    
+                            <div class="reviewer-name-rating">
+                                <p class="reviewer-name">John Doe</p>
+                                <span class="reviewer-ratings star-icon-wrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-quote-mark">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa aspernatur sequi quae perferendis expedita, doloribus quibusdam ducimus earum, fugiat quam rerum quos aperiam veritatis laborum omnis illo, dolor libero.</p>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="customer-review-card">
+                    <div class="reviewer-image reviewer-details">
+                        <div class="review-head-name-rating">
+                            <img src="Review2.jpg" alt="Resto customer reviews">
+                    
+                            <div class="reviewer-name-rating">
+                                <p class="reviewer-name">William Bond</p>
+                                <span class="reviewer-ratings star-icon-wrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-quote-mark">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa aspernatur sequi quae perferendis expedita, doloribus quibusdam ducimus earum, fugiat quam rerum quos aperiam veritatis laborum omnis illo, dolor libero.</p>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="customer-review-card">
+                    <div class="reviewer-image reviewer-details">
+                        <div class="review-head-name-rating">
+                            <img src="Review3.jpg" alt="Resto customers review">
+                    
+                            <div class="reviewer-name-rating">
+                                <p class="reviewer-name">Emily Jane</p>
+                                <span class="reviewer-ratings star-icon-wrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-quote-mark">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa aspernatur sequi quae perferendis expedita, doloribus quibusdam ducimus earum, fugiat quam rerum quos aperiam veritatis laborum omnis illo, dolor libero.</p>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="customer-review-card">
+                    <div class="reviewer-image reviewer-details">
+                        <div class="review-head-name-rating">
+                            <img src="Review4.jpg" alt="Resto review">
+                    
+                            <div class="reviewer-name-rating">
+                                <p class="reviewer-name">Shanice Kate</p>
+                                <span class="reviewer-ratings star-icon-wrapper">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="review-quote-mark">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero culpa aspernatur sequi quae perferendis expedita, doloribus quibusdam ducimus earum, fugiat quam rerum quos aperiam veritatis laborum omnis illo, dolor libero.</p>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+
+<!-- End of Customer Reviews Section -->
+
+    <!-- Order Form Starts Here -->
+
+    <section id="order" class="order-form">
+        <div class="form-wrapper">
+            <div class="form-title-texts our-menu-titles">
+                <p class="label-text title-text">Order Now</p>
+                <h3 class="subtitle-text">FREE AND FAST DELIVERY</h3>
+            </div>
+            <form class="form-body">
+                <div class="form-fields">
+                    <div class="form-left-fields">
+                        <div class="form-text-fields">
+                            <label for="name">Your Name</label>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="order">Your Order</label>
+                            <input type="text" placeholder="Enter food name">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="order">How Much</label>
+                            <input type="text" placeholder="How many orders">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="address">Your Address</label>
+                            <textarea id="" cols="30" rows="10" placeholder="Enter your address"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-right-fields">
+                        <div class="form-text-fields">
+                            <label for="name">Your Number</label>
+                            <input type="text" placeholder="Enter your number">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="order">Additional Food</label>
+                            <input type="text" placeholder="Extra with food">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="date">Date and Time</label>
+                            <input type="datetime-local">
+                        </div>
+
+                        <div class="form-text-fields">
+                            <label for="address">Your Message</label>
+                            <textarea id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttons order-form-button">Order Now</button>
+            </form>
+        </div>
+
+    </section>
+
+<!-- End of Order Form Section -->
+
+<!-- Footer Section Starts Here -->
+</body>
+<footer>
+
+</footer>
+    <div class="footer-nav-links">
+        <div class="footer-links-group">
+            <p>Locations</p>
+            <ul class="footer-links">
+                <li><a href="">Nigeria</a></li>
+                <li><a href="">Ghana</a></li>
+                <li><a href="">South Africa</a></li>
+                <li><a href="">Kenya</a></li>
+                <li><a href="">Tanzania</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-group">
+            <p>Quick Links</p>
+            <ul class="footer-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dishes</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Review</a></li>
+                <li><a href="">Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-group">
+            <p>Contact Info</p>
+            <ul class="footer-links">
+                <li><a href="">+234-703-367-8968</a></li>
+                <li><a href="">+233-222-417-5789</a></li>
+                <li><a href="">ordernow@restofoods.com</a></li>
+                <li><a href="">bestfoods@restofoods.com</a></li>
+                <li><a href="">Lagos, Nigeria</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-group">
+            <p>Follow Us</p>
+            <ul class="footer-links">
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                <li><a href=""><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-copyright">
+        <p class="copyright-left">Copyright &copy;2024 by</p><p class="copyright-right">CYNED Technologies.</p> <p>All Rights Reserved</p>
+    </div>
+</html>
