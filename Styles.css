@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+}
+
+ /* Common Style Rule */
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color-1: #eeeeee;
+    --secondary-color-2: #192a56;
+    --secondary-color-3: #27ae60;
+    --links-and-paragraphs: #76717d;
+
+    --font-size-1: 60px;
+    --font-size-2: 30px;
+    --font-size-3: 22px;
+    --font-size-4: 20px;
+    --font-size-5: 18px;
+    --font-size-6: 16px;
+
+    --spacing-1: 50px;
+    --spacing-2: 40px;
+    --spacing-3: 30px;
+    --spacing-4: 20px;
+    --spacing-5: 10px;
+
+    --border-radius: 5px;
+    --hover-height: 20px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito" sans-serif;
+}
+
+
+/* Start of navigation bar styling */
+
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    box-shadow: 1px 1px 4px var(--links-and-paragraphs);
+    z-index: 2;
+    background-color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+
+.navbar-links li a {
+    padding: 3px 7px;
+    border-radius: var(--border-radius);
+}
+
+.navbar-links li a:focus {
+    background-color: var(--secondary-color-3);
+    border: none;
+    border-radius: var(--border-radius);
+    height: var(--hover-height);
+    color: var(--primary-color);
+    padding: 3px 7px;
+}
+
+.navbar-links li a:hover {
+    background-color: var(--secondary-color-3);
+    border: none;
+    border-radius: var(--border-radius);
+    height: var(--hover-height);
+    color: var(--primary-color);
+    padding: 3px 7px;
+}
+
+.navbar-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+    color: var(--secondary-color-2);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--links-and-paragraphs);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-5);
+    align-items: center;
+}
+
+.fa-utensils {
+    color: var(--secondary-color-3);
+    font-size: var(--font-size-3);
+}
+
+.logo {
+    color: var(--secondary-color-2);
+    font-size: var(--font-size-3);
+    font-weight: bolder;
+}
+
+.navbar-top-right-icons {
+    background-color: var(--secondary-color-1);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.navbar-top-right-icons:hover {
+    background-color: var(--secondary-color-3);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--primary-color);
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Mobile Menu Styling */
+
+@media (max-width:900px) {
+  
+}
+
+@media (max-width:500px) {
+    .navbar-links {
+      display: none;
+    }
+  }
+
+
+
+
+
+/* End of Navigation Bar Styling */
+
+
+/* Start of Hero Section Styling */
+
+.hero-section {
+  padding-top: 10px;
+  height: 200px;
+}
+
+swiper-container {
+    width: 85%;
+    height: 80vh;
+    margin: auto;
+}
+
+.slides {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.slides img {
+    width: 65%;
+}
+
+.slides h2 {
+    color: var(--secondary-color-3);
+    font-size: var(--font-size-3);
+    font-weight: 450;
+}
+
+.slides h3 {
+    color: var(--secondary-color-2);
+    font-size: var(--font-size-1);
+    font-weight: 800;
+  
+}
+
+.slides p {
+    color: var(--links-and-paragraphs);
+    font-size: var(--font-size-3);
+   
+}
+
+.slides-text {
+    text-align: left;
+}
+
+.buttons {
+    background-color: var(--secondary-color-2);
+    color: var(--primary-color);
+    border: none;
+    width: 25%;
+    height: 40px;
+    border-radius: var(--border-radius);
+    font-weight: bolder;
+}
+
+.buttons:hover {
+    background-color: var(--secondary-color-3);
+    cursor: pointer;
+    transform:scaleX(1.1);
+    transform-origin: left;
+    transition: 0.7s;
+}
+
+/* End of Hero Section Styling */
+
+/* Start of Hero-section Media Query */
+
+@media screen and (max-width: 500px) {
+  .hero-section {
+   height: 250px;
+   padding: 0;
+  }
+
+  .mySwiper {
+    max-height: 500px;
+  }
+
+  .buttons {
+    width: 35vw;
+  }
+    
+}
+
+@media screen and (max-width: 900px) {
+  .hero-section {
+   height: 250px;
+   padding: 0;
+  }
+
+  .mySwiper {
+    max-height: 500px;
+  }
+
+  .buttons {
+    width: 35vw;
+  }
+    
+}
+
+/* Popular Dishes Styling */
+
+.popular-dishes-section {
+    background-color: var(--secondary-color-1);
+    padding: 65px 0;
+}
+
+.popular-dishes-titles {
+    text-align: center;
+  }
+
+  .label-text {
+    color: var(--secondary-color-3);
+    font-weight: 900;
+  }
+
+  .title-text {
+    font-size: 20px;
+    font-weight: 750;
+  }
+
+  .subtitle-text {
+    font-weight: 750;
+    font-size: 25px;
+  }
+
+  .popular-dish-name {
+    color: var(--secondary-color-2);
+  }
+
+.popular-dishes-cardwrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+
+  }
+
+  /* Dish Cards Styling */
+
+  .card {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+  
+  }
+
+  .popular-dishes-card {
+    overflow: hidden;
+  }
+
+  .popular-dishes-card .popular-dishes-icons {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .popular-dishes-card .popular-dishes-icons span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition-property: all;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+    cursor: pointer;
+  
+  }
+
+  .popular-dishes-card .popular-dishes-icons .left {
+    transform: translateX(-60px);
+
+  }
+
+  .popular-dishes-card .popular-dishes-icons .right {
+    transform: translateX(60px);
+  }
+
+  .popular-dishes-card:hover .left {
+    transform: translateX(0);
+  }
+
+  .popular-dishes-card:hover .right {
+    transform: translateX(0);
+
+  }
+
+  .left:hover {
+    background-color: var(--secondary-color-3);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--primary-color);
+  }
+
+  .right:hover {
+    background-color: var(--secondary-color-3);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: var(--primary-color);
+  }
+
+  .popular-dishes-card-detail {
+    text-align: center;
+
+  }
+
+  .popular-dishes-imgwrapper {
+    display: flex;
+    justify-content: center;
+
+  }
+
+.popular-dishes-image {
+    width: 50%;
+    object-fit: cover;
+
+}
+
+.star-icon-wrapper {
+    margin: 8px 0;
+    color: var(--secondary-color-3);
+
+}
+
+.popular-card-buttons {
+    background-color: var(--secondary-color-2);
+    color: var(--primary-color);
+    border: none;
+    width: 35%;
+    height: 35px;
+    border-radius: var(--border-radius);
+    font-weight: bolder;
+}
+
+.popular-dishes-price-and-btn {
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .popular-dishes-cardwrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width:500px) {
+    .popular-dishes-cardwrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .popular-card-buttons {
+      width: 40vw;
+    }
+}
+
+/* End of popular dishes styles */
+
+/* Start of why choose us styles */
+
+.about-us-section {
+  background-color: var(--primary-color);
+  padding: 40px 0;
+  }
+
+.about-us-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.about-us-titles {
+  text-align: center;
+}
+
+.about-us-titles h2 {
+  padding: 12px 0px;
+}
+
+.about-image-and-text-container {
+  display: flex;
+  gap: 15px;
+}
+
+.about-image-and-text-container img {
+  width: 50%;
+}
+
+.about-us-text h3 {
+  font-size: var(--font-size-2);
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+  padding: 20px 0px;
+  color: var(--secondary-color-2);
+}
+
+.about-us-text p {
+  text-align: justify;
+  color: var(--links-and-paragraphs);
+  padding-bottom: 20px;
+  line-height: 1.8;
+}
+
+.our-service-cards {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  
+}
+
+.our-service-cards .service-card {
+  border: 1px solid var(--secondary-color-1);
+  padding: 17px 12px;
+  background-color: var(--secondary-color-1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.our-service-cards i {
+  color: var(--secondary-color-3);
+  font-size: 23px;
+  }
+
+  .our-service-cards span {
+    font-weight: 600;
+    color: var(--secondary-color-2);
+  }
+
+  .service-button button {
+    background-color: var(--secondary-color-2);
+    color: var(--primary-color);
+    padding: 15px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .service-button button:hover {
+    background-color: var(--secondary-color-3);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* About Us Mobile Styling */
+
+  @media (max-width:900px) {
+    .about-image-and-text-container {
+      flex-wrap: wrap;
+    }
+    
+    .about-image-and-text-container img {
+      width: 100%;
+      max-height: 400px;
+    }
+  }
+
+  @media (max-width:500px) {
+    .about-image-and-text-container img {
+      width: 100%;
+      max-height: 200px;
+    }
+
+    .about-image-and-text-container .service-card, .service-button{
+      width: 100%;
+      margin-bottom: 7px;
+    }
+    
+    .our-service-cards{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  /* End of About Us Mobile Styling */
+
+  /* About Us Section Styling Ends Here */
+
+  /* Start of Our Menu's Styling */
+
+  .Our-menu-section {
+    background-color: var(--secondary-color-1);
+  }
+
+  .our-menu-section-container {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+
+  .our-menu-titles {
+    text-align: center;
+  }
+
+  .our-menu-titles p {
+    padding-top: 65px;
+  }
+
+  .our-menu-titles h3 {
+    padding-bottom: 25px;
+    color: var(--secondary-color-2);
+    font-size: var(--font-size-2);
+  }
+
+  .menus-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+
+  .menu-card {
+    position: relative;
+    box-shadow: 1px 2px 5px var(--links-and-paragraphs);
+  }
+
+.popular-dishes-imgwrapper .menu-image {
+    width: 100%;
+    max-height: 210px;
+    border-radius: 5px;
+}
+
+.menu-card-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: var(--secondary-color-1);
+  color: var(--secondary-color-2);
+  font-size: 25px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.menu-card-icon:hover {
+  background-color: var(--secondary-color-3);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.menu-card-details, .menu-card-details i {
+  text-align: left;
+}
+
+.menu-name {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: var(--secondary-color-2);
+  font-weight: 750px;
+}
+
+
+.menu-card-details p {
+  color: var(--links-and-paragraphs);
+}
+
+.menu-card-button-and-price {
+  margin-top: 10px;
+}
+
+.menu-card-price {
+  margin-left: 10px;
+}
+
+/* Mobile Styles for Our Menu */
+
+@media (max-width:900px) {
+  .menus-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width:500px) {
+  .menus-container {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu-card-button {
+    width: 40vw;
+  }
+
+}
+
+/* End of Our Menu Mobile Styles */
+
+/* Start of Customer Reviews Section Styles */
+
+.customer-reviews-section {
+  background-color: var(--primary-color);
+}
+
+.customers-review-titles .customer-reviews-title {
+  padding-top: 65px;
+ 
+}
+
+.customer-reviews-section .customer-reviews-container {
+  padding-bottom: 20px;
+
+}
+
+.customer-reviews-container .slides-holder {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  height: fit-content;
+}
+
+.customer-reviews-container .customer-review-card {
+  position: relative;
+  border: 3px solid var(--secondary-color-1);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  background-color:var(--primary-color);
+  box-shadow: 3px 8px 5px var(--links-and-paragraphs);
+  width: 280px !important;
+}
+
+.slides-holder .customer-review-card img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+
+.customer-review-card .reviewer-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewer-details .review-head-name-rating {
+  display: flex;
+  gap: 7px;
+  line-height: 1.0;
+}
+
+.customer-review-card .review-quote-mark {
+  font-size: 35px;
+  color: #cccccc;
+  padding-right: 7px;
+}
+
+.review-head-name-rating .reviewer-name {
+  font-size: var(--font-size-3);
+  font-weight: 700;
+  color: var(--secondary-color-2);
+  padding-top: 15px;
+}
+
+.reviewer-name-rating .reviewer-ratings {
+  font-size: 12px;
+}
+
+.customer-review-card .review-text {
+  padding: 12px 10px;
+  line-height: 1.5;
+  color: var(--links-and-paragraphs);
+  font-size: var(--font-size-6);
+  text-align: justify;
+}
+
+/* Customer Reviews Mobile Styling */
+
+@media (max-width:900px) {
+  
+}
+
+@media screen and (max-width:500px) {
+  
+}
+
+/* Media query not working for customer reviews swiper. Don't know why */
+
+/* End of Customers Review Section */
+
+/* Order Form Styling */
+
+.order-form {
+  background-color: var(--secondary-color-1);
+  padding: 20px 0;
+}
+
+
+.order-form .form-body {
+  padding: 15px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 2px 4px var(--links-and-paragraphs);
+}
+
+.order-form .form-fields {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-fields .form-left-fields, .form-fields .form-right-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48%;
+  margin: 0 auto;
+}
+
+.form-fields .form-text-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text-fields label {
+  color: var(--links-and-paragraphs);
+  text-align:left;
+  padding-left: 10px;
+  font-size: var(--font-size-6);
+}
+
+.form-text-fields input, .form-text-fields textarea {
+  background-color: var(--secondary-color-1);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 10px;
+  color: var(--links-and-paragraphs);
+  font-size: var(--font-size-6);
+}
+
+.form-text-fields textarea {
+  resize:none;
+}
+
+.form-text-fields input:focus, .form-text-fields textarea:focus {
+  outline: 1px solid var(--secondary-color-3);
+}
+
+.order-form button {
+ width: 20%;
+}
+
+/* Order Form Mobile Styling */
+
+@media (max-width:900px) {
+  .order-form .form-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:500px) {
+ 
+  .order-form .form-fields  {
+    flex-direction: column;
+  }
+
+  .form-fields .form-left-fields, .form-fields .form-right-fields{
+    width: 100%;
+  }
+
+  .order-form button {
+    width: 40%;
+   }
+}
+
+/* End of Order Form Styling */
+
+/* Start of Footer Section Styling */
+
+.footer-nav-links {
+  padding: 25px 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-links ul {
+  list-style-type: none;
+}
+
+.footer-nav-links ul a {
+  text-decoration: none;
+  color: var(--links-and-paragraphs);
+  line-height: 2.0;
+}
+
+.footer-links-group p {
+  font-size: var(--font-size-3);
+  color: var(--secondary-color-2);
+  font-weight: 700;
+}
+
+.footer-links i {
+  color: var(--secondary-color-2);
+  font-size: var(--font-size-3);
+}
+
+.footer-nav-links ul a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color-3);
+}
+
+hr {
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid var(--secondary-color-1);
+}
+
+/* Start of Copyright Styling */
+
+.footer-copyright {
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-copyright .copyright-right {
+  color: var(--secondary-color-3);
+  font-weight: 800;
+  margin-left: -5px;
+}
+
+/* Footer Section Mobile Styling */
+
+
+@media (max-width:900px) {
+  .footer-nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    width: 55%;
+  }
+}
+
+@media (max-width:500px){
+  
+  .footer-nav-links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-links-group p {
+   padding-top: 15px;
+  }
+
+  .footer-copyright {
+    flex-wrap: wrap;
+  }
+}
